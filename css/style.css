@@ -15,6 +15,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: rgb(17, 17, 17);
   line-height: 1.6;
+  height: 150vh;
 }
 
 ul {
@@ -39,16 +40,6 @@ p{
   color:rgb(14, 14, 14);
   margin: 10x 0;
 }
-img {
-  border-radius: 50%;
-  max-width: 100%;
-  height: auto;
-  padding-left: 50px;
-  padding-top: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-}
 
 .navbar img {
   width: 15%;
@@ -60,6 +51,17 @@ img {
   padding-right: 0px;
   margin-left: 0px;
   margin-bottom: 0px;
+}
+
+video {
+  position:fixed;
+  right: 0px;
+  bottom: 0px;
+  margin-bottom:-170px;
+  width: 100%;
+  min-width:100%; 
+  min-height: 100%;
+  z-index:-3;
 }
 /*Navbar*/
 .navbar {
@@ -87,10 +89,11 @@ img {
 }
 /*Showcase*/
 .showcase {
-  height:400px;
+  height:320px;
   background: var(--primary-gradient);
-  color: #fff;
-  position: relative;
+  color: rgb(255, 255, 255);
+  position:relative;
+  z-index:2;
 }
 
 .showcase h1 {
@@ -113,7 +116,7 @@ margin: 20px 0;
   height: 350px;
   width: 400px;
   padding: 40px;
-  z-index: 100;
+  z-index: 4;
 }
 
 .showcase-form .form-control {
@@ -138,21 +141,22 @@ margin: 20px 0;
 .showcase::after{
   content: '';
   position: absolute;
-  height: 100px;
-  bottom: -70px;
+  height: 160px;
+  bottom: -60px;
   right: 0;
   left: 0;
-  background:white;
-  transform:skewY(-4deg);
-  -moz-transform:skewY(-4deg);
-  -ms-transform:skewY(-4deg);
+  background:var(--primary-gradient);
+  transform:skewY(-3deg);
+  z-index:-2;
 }
+
 
 /*Stats*/
 .stats {
   padding-top: 500px;
-  box-shadow: 0 2px 10px rgba(0, 0 , 0, 0.2);
+
 }
+
 .stats h3 {
     text-decoration: none;
     font-weight: 200;
@@ -162,60 +166,3 @@ margin: 20px 0;
     margin-right: 500px;
     margin-bottom:0px;
     }
-  
-
-/*Utililties*/
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding:0 40px;
-}
-
-.card {
-  background-color:white;
-  color: #333;
-  border-radius: 32px;
-  box-shadow: 0 3px 20px rgba(0, 0 , 0, 0.2);
-  padding: 20px;
-  margin: 10px;
-}
-
-.btn-primary {
-  display: inline-block;
-  padding: 10px 30px;
-  cursor: pointer;
-  background-image: var(--primary-gradient);
-  border: none;
-  border-radius: 16px;
-}
-.btn-outline {
-  background-color: transparent;
-  border:1px #fff solid;
-  border-radius: 4px;
-}
-
-.btn:hover{
-  transform: scale(.95);
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.grid-3{
-  grid-template-columns: repeat(3,1fr);
-}
-
