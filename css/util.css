@@ -22,6 +22,7 @@
     background-image: var(--primary-gradient);
     border: none;
     border-radius: 16px;
+    opacity: 0.75;
   }
   .btn-outline {
     background-color: transparent;
@@ -30,8 +31,13 @@
   }
   
   .btn:hover{
-    transform: scale(.95);
+    transition: .5s ease;
+    transform: scale(.98);
   }
+
+.text-center {
+  text-align:auto;
+}
   
   .flex {
     display: flex;
@@ -53,3 +59,23 @@
     grid-template-columns: repeat(3,1fr);
   }
   
+  /* Margin */
+  .my-1 {
+    margin: 1rem 0;
+  }
+
+  .my-2 {
+    margin: 1.5rem 0;
+  }
+  .my-3 {
+    margin: 2rem 0;
+  }
+  .my-4 {
+    margin: 3rem 0;
+  }
+  .my-5 {
+    margin: 4rem 0;
+  }
+
+  
+
