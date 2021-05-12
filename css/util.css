@@ -22,8 +22,9 @@
     background-image: var(--primary-gradient);
     border: none;
     border-radius: 16px;
-    opacity: 0.75;
+    opacity: .95;
   }
+
   .btn-outline {
     background-color: transparent;
     border:1px #fff solid;
@@ -32,9 +33,54 @@
   
   .btn:hover{
     transition: .5s ease;
+    opacity: 1;
     transform: scale(.98);
   }
 
+  /*Backgrounds and colored buttons*/
+  .bg-primary, 
+  .btn-primary{
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+  }
+
+  .bg-secondary, 
+  .btn-secondary{
+    background-color: var(--secondary-color);
+    color: rgb(255, 255, 255);
+  }
+  .bg-dark, 
+  .btn-dark{
+    background-color: var(--dark-color);
+    color: rgb(255, 255, 255);
+  }
+
+  .bg-light, 
+  .btn-light{
+    background-color: var(--light-color);
+    color: rgb(14, 14, 14);
+  }
+
+  /*Text Sizes*/
+  .lead {
+    font-size: 20px;
+  }
+
+  .sm{
+    font-size: 1rem;
+  }
+
+  .md{
+    font-size: 2rem;
+  }
+
+  .lg{
+    font-size: 3rem;
+  }
+
+.xl {
+  font-size: 4rem;
+}
 .text-center {
   text-align:auto;
 }
@@ -77,5 +123,45 @@
     margin: 4rem 0;
   }
 
-  
+
+/*Padding*/
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-2{
+  padding: 1.5rem;
+}
+
+.py-3{
+  padding: 2rem;
+}
+
+.py-4{
+  padding: 3rem;
+}
+
+.py-5{
+  padding: 4rem;
+}
 
