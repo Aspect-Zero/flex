@@ -55,7 +55,22 @@
     color: rgb(255, 255, 255);
   }
 
-  .bg-light, 
+  .bg-primary a,
+  .btn-primary a,
+  .bg-secondary a,
+  .btn-secondary a,
+  .bg-dark a,
+  .btn-dark a{
+    color:rgb(0, 0, 0);
+  }
+  
+  .footer h1 {
+    color: rgb(0, 0, 0);
+  }
+  .footer p{
+    color: rgb(0, 0, 0);
+  }
+
   .btn-light{
     background-color: var(--light-color);
     color: rgb(14, 14, 14);
