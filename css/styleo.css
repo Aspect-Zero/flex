@@ -2,7 +2,7 @@
 
 :root {
   --primary-gradient:linear-gradient(90deg, rgba(143,205,195,1) 0%, rgba(116,220,204,1) 50%, rgba(85,201,188,1) 100%);
-  --primary-color:#50bca4;
+  --primary-color:#69dfc5;
   --secondary-color:#38A49E;
   --dark-color:#00f7ff;
   --light-color:#C6FCED;
@@ -54,7 +54,7 @@ video {
 }
 /*navbar*/
 .navbar {
-  background: var(--primary-gradient);
+  background: var(--primary-color);
   color: rgb(34, 34, 34);
   height:130px;
   position:absolute;
@@ -233,7 +233,6 @@ margin: 20px 0;
  
 .footer{
   position:absolute;
-  top: 320vh;
   width:100%;
   height:35vh;
   font-size: 20px;
@@ -241,7 +240,7 @@ margin: 20px 0;
   background:linear-gradient(-45deg, #50BCA4, #38A49E, #2D8C93, #2C7583);
 	animation:gradient ease infinite;
   animation-duration: 2s;
-  z-index:10;
+  z-index:2;
 }
 
 /* Tablets and under*/
