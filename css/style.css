@@ -49,7 +49,7 @@ p{
 video {
   position:absolute;
   width: 100%;
-  top: 208vh;
+  top: 258vh;
   z-index: -5;
 }
 /*navbar*/
@@ -88,14 +88,6 @@ video {
 .navbar a:hover{
   border-bottom: 2px rgb(255, 255, 255) solid;
 }
-
-
-
-.navbar img:hover{
-  cursor: default;
-}
-
-
 
 
 .navbar .flex {
@@ -177,20 +169,21 @@ margin: 20px 0;
   position:absolute;
   width: 100%;
   top: 100vh;
-  border-spacing:2vh;
   z-index:4;
 }
 
 .char img{
   opacity: 0.95;
-  border-radius: 40%; 
+  border-radius: 100%; 
   width: 65%;
 }
-
+.char img{
+  transition:3s ease;
+}
 
 .char img:hover{
-  transition:2s ease;
-  border-radius: 65%; 
+  transition:0.2s ease;
+  border-radius: 2%; 
   opacity:1;
 }
 
@@ -209,7 +202,7 @@ margin: 20px 0;
   background-size: 400% 100%;
   position:absolute;
   width: 100%;
-  top: 167.5vh;
+  top: 220vh;
 	animation:gradient ease infinite;
   animation-duration: 2s;
   display: flex;
@@ -230,11 +223,30 @@ margin: 20px 0;
 .skin img{
   width: 50%;
 }
-  
 
+/*Interview*/
+.interview{
+  position: absolute;
+  z-index: 11;
+  font-size: 24px;
+  background: var(--primary-gradient);
+  width: 100%;
+  height: 30vh;
+  top:194vh;
+}
+.marquee a:hover{
+  border-bottom: 2px red solid;
+}
+
+.interview .marquee{
+  font-size: 24px;
+  border-bottom:1px rgba(22, 216, 174, 0.493) solid;
+  border-radius: 24px;
+}
+/*Footer*/
 .footer{
   position:absolute;
-  top: 320vh;
+  top: 370vh;
   width:100%;
   height:35vh;
   font-size: 20px;

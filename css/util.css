@@ -32,7 +32,7 @@
   }
   
   .btn:hover{
-    transition: .5s ease;
+    transition: .0.2s ease;
     opacity: 1;
     transform: scale(.98);
   }
